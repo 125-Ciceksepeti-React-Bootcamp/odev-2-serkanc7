@@ -1,0 +1,15 @@
+.header{
+    background-color: $header-bg-color;
+    height: 95px;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__logo{
+        text-decoration: none;
+    }
+}

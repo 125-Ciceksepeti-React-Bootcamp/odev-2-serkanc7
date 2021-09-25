@@ -1,0 +1,40 @@
+.animals{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+
+    @include mq(tablet,max){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include mq(mobile,max){
+        grid-template-columns: 1fr;
+    }
+}
+
+.animal{
+    padding: 10px;
+    border: 2px solid $card-border-color;
+    border-radius: 5px;
+    background-color: $card-bg-color;
+    color: $card-color;
+
+    &__img{
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+    &__info{
+        margin-top: 5px;
+        font-size: 25px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__legs{
+        font-size: 18px;
+    }
+}
